@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li, a, button{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Montserrat','sans-serif';
+    font-weight: 800;
+}
+
+.logo{
+    font-weight: 200;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #243127;
+    z-index: 1;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px; 
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #FABC3F;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background-color: #243127bb;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s;
+    z-index: 1;
+}
+
+.dropdown_menu.open{
+    height: 220px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+button {
+    color: black;
+    padding: 5px 20px;
+    background-color: #FABC3F;
+    border: none;
+    border-radius: 560px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+@media(max-width: 992px){
+    .nav__links, .cta{
+        display: none;    
+    }
+
+    .toggle_btn {
+        display: block;  
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu, .cta{
+        left: 2rem;
+        width: unset;
+        z-index: 1;
+    }
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+.shop-now a{
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.video-bg{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width:100%;
+    min-height: 100%;
+}
+
+.watch-pics{
+    height: 250px;
+    z-index: 1;
+}
+
+.watch-pics, .container {
+    display: flex;
+    max-width: 12000px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.watch-pics img{
+    height: 100px;
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+    padding: 5px;
+}
+
+.watch-pics img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-out;
+}
+
+.pick-a h1{
+    font-weight: 300;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.description .container{
+    min-height: 15vh;
+    max-height: 40vh;
+}
+
+.wrapper-main{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.description p{
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+.description h2{
+    font-family: 'Montserrat','sans-serif';
+    font-size: 36px;
+    color: #0d2b14;
+}
+
+footer *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer{
+    color: #fff;
+    background: #243127;
+}
+
+footer p{
+    color: #fff;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h4{
+    font-family: 'Montserrat','sans-serif';
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+footer .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+
+}
+
+.footer-top .container{
+    position: relative;
+}
+
+.footer-top .container, .footer-bottom .container, .col2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer-bottom .container{
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.footer .menu a{
+    transition: 0.3s ease-out;
+}
+
+.footer .menu a:hover{
+    color: #FABC3F;
+}
+
+.brand{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.media-icons li, .service-icons li{
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icons a{
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media-icons a:hover{
+    background: #fff;
+    color: #111;
+}
+
+.service-icons a{
+    font-size: 1.6em;
+}
+
+.service-icons a:hover{
+    color: #dbdbdb;
+}
+
+.footer-bottom {
+    border-top: 1px #dbdbdb solid;
+}
