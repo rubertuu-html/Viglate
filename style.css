@@ -239,6 +239,7 @@ footer ul{
 footer{
     color: #fff;
     background: #243127;
+    position: fixed;
 }
 
 footer p{
