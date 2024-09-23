@@ -166,7 +166,8 @@ button:hover{
 }
 
 .watch-pics{
-    height: 250px;
+    height: 100%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -177,6 +178,7 @@ button:hover{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-botom: auto;
 }
 
 .watch-pics img{
@@ -185,6 +187,7 @@ button:hover{
     object-fit: contain;
     object-position: center;
     padding: 5px;
+    margin-bottom: 60px;
 }
 
 .watch-pics img:hover{
@@ -239,7 +242,7 @@ footer ul{
 footer{
     color: #fff;
     background: #243127;
-    position: fixed;
+    position: static;
 }
 
 footer p{
